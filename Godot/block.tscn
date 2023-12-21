@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://m32xu63hfero"]
+
+[ext_resource type="Texture2D" uid="uid://crdivusspqxne" path="res://Wall.png" id="1_dmala"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdpgf"]
+size = Vector2(296.661, 204.615)
+
+[node name="Block" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(228, 358)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(7, 55)
+scale = Vector2(0.749158, 0.185714)
+texture = ExtResource("1_dmala")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(6.87711, 55)
+scale = Vector2(0.749158, 0.185714)
+shape = SubResource("RectangleShape2D_hdpgf")
